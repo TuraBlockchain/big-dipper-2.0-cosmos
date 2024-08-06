@@ -91,6 +91,7 @@ import jackalLogoDark from 'shared-utils/assets/logos/jackal-dark.svg?url';
 import jackalLogoLight from 'shared-utils/assets/logos/jackal-light.svg?url';
 import archwayLogoDark from 'shared-utils/assets/logos/archway-dark.svg?url';
 import archwayLogoLight from 'shared-utils/assets/logos/archway-light.svg?url';
+import tagfusionLogoLight from 'shared-utils/assets/logos/tagfusion-light.png';
 
 interface IconProps extends Omit<ImageProps, 'id' | 'src'> {
   type: 'icon' | 'logo';
@@ -106,7 +107,8 @@ const ChainIcon = ({
   const { classes, cx } = useStyles();
 
   let [iconDark, iconLight] =
-    type === 'icon' ? [baseIconLight, baseIconLight] : [baseLogoLight, baseLogoLight];
+    // type === 'icon' ? [baseIconLight, baseIconLight] : [baseLogoLight, baseLogoLight];
+    type === 'icon' ? [baseIconLight, baseIconLight] : [tagfusionLogoLight, tagfusionLogoLight];
   switch (chainName) {
     case 'agoric':
       [iconDark, iconLight] =
