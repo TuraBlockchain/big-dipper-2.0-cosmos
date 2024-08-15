@@ -228,9 +228,9 @@
         }
       },
       "endpoints": {
-        "graphql": "http://43.135.26.222:8080/v1/graphql",
-        "graphqlWebsocket": "ws://43.135.26.222:8080/v1/graphql",
-        "publicRpcWebsocket": "ws://43.135.26.222:26657/websocket"
+        "graphql": "https://testnet1.turablockchain.com/v1/graphql",
+        "graphqlWebsocket": "wss://testnet1.turablockchain.com/v1/graphql",
+        "publicRpcWebsocket": "wss://testnet1.turablockchain.com/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",

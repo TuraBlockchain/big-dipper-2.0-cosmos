@@ -3,7 +3,10 @@ generates:
   ./src/graphql/types/general_types.ts:
     documents:
       - 'src/graphql/general/*'
-    schema: http://43.135.26.222:8080/v1/graphql
+    schema:
+      - https://testnet1.turablockchain.com/v1/graphql:
+          headers:
+            x-hasura-admin-secret: "myadminsecretkey"
     config:
       # omitOperationSuffix: true
       skipTypeNameForRoot: true
