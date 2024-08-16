@@ -97,9 +97,9 @@ function createWebSocketLink(uri?: string) {
 
 export function profileApi() {
   if (/^testnet/i.test(chainType)) {
-    return 'https://gql.morpheus.desmos.network/v1/graphql';
+    return 'https://testnet1.turablockchain.com/v1/graphql';
   }
-  return 'https://gql.mainnet.desmos.network/v1/graphql';
+  return 'https://explorer.turablockchain.com/v1/graphql';
 }
 
 export const BIG_DIPPER_NETWORKS = 'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/';

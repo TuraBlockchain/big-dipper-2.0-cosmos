@@ -211,7 +211,7 @@
       "network": "testnet-tura",
       "chainType": "Testnet",
       "genesis": {
-        "time": "2024-07-08T05:11:01",
+        "time": "2024-08-16T11:58:50",
         "height": 1
       },
       "prefix": {

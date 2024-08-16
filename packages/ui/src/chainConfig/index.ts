@@ -1,4 +1,6 @@
-import chainJson from '@/chain.json';
+// import chainJson from '@/chain.json';
+import chainJson from '../chain.json';
+
 import type { ChainConfig } from '@/chainConfig/types';
 
 const chainTypes = [process.env.NEXT_PUBLIC_CHAIN_TYPE];

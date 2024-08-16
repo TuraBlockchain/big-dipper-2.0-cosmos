@@ -53,8 +53,7 @@ export const useDesmosProfile = (options: Options) => {
     }
     (async () => {
       try {
-        const isAddress =
-          addressesMemo[0]?.startsWith('desmos') && isValidAddress(addressesMemo[0]);
+        const isAddress = addressesMemo[0]?.startsWith('tura') && isValidAddress(addressesMemo[0]);
         const isDTag = !isAddress && addressesMemo[0]?.startsWith('@');
         const query =
           (isAddress && DesmosProfileDocument) ||
