@@ -13,7 +13,7 @@
     "build": "dotenv -- turbo run build --filter=$(dotenv -- printenv PROJECT_NAME || echo web-tura)...",
     "build:ci": "turbo run build --continue --concurrency=1",
     "clean": "yarn cache clean --mirror && [ -d \"node_modules\" ] && dotenv -- turbo run clean && rm -rf node_modules",
-    "start": "dotenv -- turbo run start --filter=$(dotenv -- printenv PROJECT_NAME || echo webweb-tura)...",
+    "start": "dotenv -- turbo run start --filter=$(dotenv -- printenv PROJECT_NAME || echo web-tura)...",
     "format": "prettier --write \"{**/src/{,**/}*.{js,ts,tsx,mjs,cjs,md},e2e/{,**/}*.{js,ts,tsx,mjs,cjs,md}}\"",
     "ts-check": "dotenv -- turbo run ts-check --filter=$(dotenv -- printenv PROJECT_NAME || echo web-tura)...",
     "ts-check:ci": "turbo run ts-check --continue",
