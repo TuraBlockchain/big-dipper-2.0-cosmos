@@ -208,10 +208,10 @@
   "keplr": "",
   "chains": [
     {
-      "network": "Mainnet-tura",
-      "chainType": "Mainnet",
+      "network": "testnet-tura",
+      "chainType": "Testnet",
       "genesis": {
-        "time": "2024-07-08T08:42:15",
+        "time": "2024-08-16T11:58:50",
         "height": 1
       },
       "prefix": {
@@ -228,9 +228,9 @@
         }
       },
       "endpoints": {
-        "graphql": "https://explorer.turablockchain.com/v1/graphql",
-        "graphqlWebsocket": "wss://explorer.turablockchain.com/v1/graphql",
-        "publicRpcWebsocket": "wss://explorer.turablockchain.com/websocket"
+        "graphql": "https://testnet1.turablockchain.com/v1/graphql",
+        "graphqlWebsocket": "wss://testnet1.turablockchain.com/v1/graphql",
+        "publicRpcWebsocket": "wss://testnet1.turablockchain.com/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",
