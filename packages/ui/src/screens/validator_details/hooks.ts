@@ -76,7 +76,7 @@ const formatStatus = (data: ValidatorDetailsQuery) => {
     status: data.validator[0]?.validatorStatuses?.[0]?.status ?? 3,
     jailed: data.validator[0]?.validatorStatuses?.[0]?.jailed ?? false,
     tombstoned: data.validator[0]?.validatorSigningInfos?.[0]?.tombstoned ?? false,
-    commission: data.validator[0]?.validatorCommissions?.[0]?.commission ?? 0,
+    commission: (data.validator[0]?.validatorCommissions?.[0]?.commission ?? 0) / 10000000000,
     condition,
     missedBlockCounter,
     signedBlockWindow,

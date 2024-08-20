@@ -59,7 +59,7 @@ const ValidatorOverview: FC<ValidatorOverviewProps> = ({ status, overview, class
       ),
       value: (
         <Typography variant="body1" className="value">
-          {`${numeral(status.commission * 100).format('0.00')}%`}
+          {`${numeral((status.commission / 100000000) * 100).format('0.00')}%`}
         </Typography>
       ),
     },

@@ -17,7 +17,6 @@ const ValidatorDetails = () => {
   const { classes } = useStyles();
   const { state, loading } = useValidatorDetails();
   const { desmosProfile, exists, overview, status, votingPower } = state;
-
   return (
     <>
       <NextSeo

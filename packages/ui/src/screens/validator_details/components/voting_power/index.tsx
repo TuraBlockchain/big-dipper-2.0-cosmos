@@ -9,6 +9,7 @@ import type { VotingPowerType } from '@/screens/validator_details/types';
 import useStyles from '@/screens/validator_details/components/voting_power/styles';
 import Box from '@/components/box';
 import { useOnlineVotingPower } from '@/screens/home/components/hero/components/online_voting_power/hooks';
+import { formatToken } from '@/utils';
 
 type VotingPowerProps = {
   className?: string;
@@ -22,14 +23,13 @@ const VotingPower: FC<VotingPowerProps> = ({ className, data, status }) => {
 
   const { chainName } = chainConfig();
 
-  const votingPower = status === 3 ? numeral(data.self).format('0,0') : '0';
-
+  const votingPower = status === 3 ? numeral(data.self / 100000000).format('0,0') : '0';
   const votingPowerPercent =
     // eslint-disable-next-line no-nested-ternary
     status === 3
       ? chainName === 'wormhole'
         ? numeral((Number(votingPower) / state.activeValidators) * 100)
-        : numeral((data.self / (numeral(data.overall.value).value() ?? 0)) * 100)
+        : numeral((data.self / 100000000 / (numeral(data.overall.value).value() ?? 0)) * 100)
       : numeral(0);
 
   const { classes, cx } = useStyles({
