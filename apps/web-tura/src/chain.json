@@ -225,6 +225,10 @@
         "utura": {
           "display": "TURA",
           "exponent": 8
+        },
+        "utags": {
+          "display": "TAGS",
+          "exponent": 8
         }
       },
       "endpoints": {
