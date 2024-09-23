@@ -20,14 +20,14 @@ const initialState: OnlineVotingPowerState = {
 };
 
 const formatOnlineVotingPower = (data: OnlineVotingPowerQuery) => {
-  // const votingPower = data?.validatorVotingPowerAggregate?.aggregate?.sum?.votingPower ?? 0;
-  const votingPower =
-    numeral(
-      formatToken(
-        data?.validatorVotingPowerAggregate?.aggregate?.sum?.votingPower ?? 0,
-        votingPowerTokenUnit
-      ).value
-    ).value() ?? 0;
+  const votingPower = data?.validatorVotingPowerAggregate?.aggregate?.sum?.votingPower ?? 0;
+  // const votingPower =
+  //   numeral(
+  //     formatToken(
+  //       data?.validatorVotingPowerAggregate?.aggregate?.sum?.votingPower ?? 0,
+  //       votingPowerTokenUnit
+  //     ).value
+  //   ).value() ?? 0;
   const bonded = data?.stakingPool?.[0]?.bonded ?? 0;
   const activeValidators = data?.activeTotal?.aggregate?.count ?? 0;
   return {
